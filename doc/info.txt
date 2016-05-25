@@ -1,0 +1,14 @@
+This is a webstore app in django, python, PostgreSQL for learning purpose.
+
+The functionalities that we will be adding to it are:
+Login / Logout customer
+Register customer
+Customer settings
+Display product list
+Display product details
+Add product to cart
+Buy product
+More...
+
+We begin by working on the registration and login / logout functionality.
+Username will be the email_id itself.
