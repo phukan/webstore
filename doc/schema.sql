@@ -9,8 +9,8 @@ CREATE TABLE tCustomer (
     cust_name   TEXT       NOT NULL,
     age         INT        NOT NULL,
     email       TEXT       NOT NULL,
-    address     CHAR(50)
-    status      CHAR(1)    CHECK (status in (SELECT code FROM tStatus) )
+    address     CHAR(50),
+    status      CHAR(1)    CHECK ( status in ( 'A', 'S', 'D', 'P' ) ),
     created_on  TIMESTAMP  NOT NULL,
     updated_on  TIMESTAMP  NOT NULL
 );
